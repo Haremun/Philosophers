@@ -17,8 +17,6 @@ public class App {
             Philosopher philosopher = new Philosopher(chopsticks);
             philosophers.add(new Thread(philosopher, x));
         });
-        philosophers.forEach(x -> {
-            x.start();
-        });
+        philosophers.forEach(Thread::start);
     }
 }

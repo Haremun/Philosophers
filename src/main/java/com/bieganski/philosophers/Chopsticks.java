@@ -8,7 +8,7 @@ public class Chopsticks {
     public Chopsticks(List<Chopstick> chopsticks) {
         this.chopsticks = chopsticks;
     }
-    synchronized Chopstick obtainChopstick(int index){
+    Chopstick obtainChopstick(int index){
         return index < chopsticks.size() ? chopsticks.get(index) : chopsticks.get(0);
     }
 }
