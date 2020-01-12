@@ -1,10 +1,24 @@
 Title: Philosophers
+
 Author: Kamil Bieganski
+
 Version: 0.1
 
 To run project you have to use:
-- bash or other compatible unix shell
-- jdk version openjdk 11.0.5 2019-10-15
-- maven version 
+- jdk version openjdk 11.0.5+
+- maven version 3.6.3+
 
-To build project simply run "mvn package" command, to make it work run "java -cp target/Philosophers-0.1.jar com.bieganski.Philosophers"
+Project has different states on different commit.
+
+Tags to main commits:
+
+	-Deadlock
+	-Fix1
+
+To build project simply run command:
+	
+	mvn package
+
+To run project use command
+
+	java -jar target/Philosophers-0.1.jar
